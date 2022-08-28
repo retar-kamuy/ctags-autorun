@@ -1,9 +1,45 @@
-# Visual Studio Code 実践ガイド 第3部 リント サンプルコード
+# Ctags Autorun
 
-- [as-task-provider](./as-task-provider) 第3.14章 リントの拡張機能の開発
-- [as-language-server](./as-language-server) 第3.16章 言語サーバーとしてリントの拡張機能を作成する
+Setup package.json
+```
+npm init
+```
 
-## LICENSE
+Install TypeScript compiler
+```
+npm install --save-dev typescript
+```
 
-- MIT License
-- Visual Studio Code 実践ガイドの購入者、組織は、無制限の改変、コピー、配布を許可
+When use with 'fs' package at TypeScript, install 'node' package
+```
+npm install --save-dev @types/node
+```
+
+use ESLint
+
+1. install npm
+```
+npm install --save-dev eslint
+```
+
+2. Extension ESLint
+
+3. Setup ESLint 
+```
+>node_modules\.bin\eslint --init
+
+√ How would you like to use ESLint? · style
+√ What type of modules does your project use? · none
+√ Which framework does your project use? · none
+√ Does your project use TypeScript? · No / Yes
+√ Where does your code run? · node
+√ How would you like to define a style for your project? · guide
+√ Which style guide do you want to follow? · standard-with-typescript
+√ What format do you want your config file to be in? · JSON
+Checking peerDependencies of eslint-config-standard-with-typescript@latest
+The config that you've selected requires the following dependencies:
+
+eslint-config-standard-with-typescript@latest @typescript-eslint/eslint-plugin@^5.0.0 eslint@^8.0.1 eslint-plugin-import@^2.25.2 eslint-plugin-n@^15.0.0 eslint-plugin-promise@^6.0.0 typescript@*
+√ Would you like to install them now? · No / Yes
+√ Which package manager do you want to use? · npm
+```

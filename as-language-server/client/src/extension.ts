@@ -1,6 +1,7 @@
 import * as path from "path";
 import * as vscode from "vscode";
 import * as ls from "vscode-languageclient";
+import * as child_process from "child_process";
 
 let client: ls.LanguageClient;
 
@@ -48,6 +49,13 @@ export function activate(context: vscode.ExtensionContext) {
     clientOptions
   );
 
+  vscode.workspace.onDidSaveTextDocument(e => {
+    if (e) {
+      console.log('ctags manager configure');
+      execCtags(e);
+    }
+  })
+
   // Language Client の開始
   client.start();
 }
@@ -57,4 +65,18 @@ export function deactivate(): Thenable<void> | undefined {
     return undefined;
   }
   return client.stop();
+}
+
+async function execCtags(document: vscode.TextDocument): Promise<void> {
+
+  const filePath = document.uri.fsPath;
+  if (!filePath) {
+    // ファイルが特定できない場合は何もしない
+    return;
+  }
+
+  child_process.execSync(`echo %CD%`);
+  process.chdir(filePath);
+  const cmd = `ctags.exe --tag-relative --extras=f --fields=+K -R -f .ctags --language-force=SystemVerilog`;
+  child_process.execSync(cmd);
 }

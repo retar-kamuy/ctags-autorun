@@ -1,50 +1,55 @@
 {
-	"name": "line-length-linter",
-	"displayName": "line length linter",
-	"description": "",
-	"version": "0.0.1",
-	"engines": {
-		"vscode": "^1.29.0"
-	},
-	"categories": [
-		"Other"
-	],
-	"activationEvents": [
-		"onLanguage:go",
-		"*"
-	],
-	"main": "./client/out/extension.js",
-	"contributes": {
-		"configuration": [
-			{
-				"title": "Line Length Linter",
-				"properties": {
-					"lll.maxLength": {
-						"type": "number",
-						"default": 80
-					},
-					"lll.maxNumberOfProblems": {
-						"type": "number",
-						"default": 100
-					}
-				}
-			}
-		]
-	},
-	"scripts": {
-		"vscode:prepublish": "npm run compile",
-		"compile": "tsc -p ./",
-		"watch": "tsc -watch -p ./",
-		"postinstall": "node ./node_modules/vscode/bin/install",
-		"test": "npm run compile && node ./node_modules/vscode/bin/test"
-	},
-	"devDependencies": {
-		"@types/mocha": "^2.2.42",
-		"@types/node": "^10.12.21",
-		"@types/vscode": "^1.34.0",
-		"tslint": "^5.12.1",
-		"typescript": "^3.5.1",
-		"vscode": "^1.1.34"
-	},
-	"dependencies": {}
+  "name": "line-length-linter",
+  "displayName": "line length linter",
+  "description": "This is the README for your extension \"line-length-linter\". After writing up a brief description, we recommend including the following sections.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.29.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onLanguage:go",
+    "*"
+  ],
+  "main": "./client/out/extension.js",
+  "contributes": {
+    "configuration": [
+      {
+        "title": "Line Length Linter",
+        "properties": {
+          "lll.clientCurrentPath": {
+            "type": "string",
+            "default": "C:\\Repositories\\ctags-autorun\\as-language-server"
+          },
+          "lll.maxLength": {
+            "type": "number",
+            "default": 80
+          },
+          "lll.maxNumberOfProblems": {
+            "type": "number",
+            "default": 100
+          }
+        }
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "postinstall": "node ./node_modules/vscode/bin/install",
+    "test": "npm run compile && node ./node_modules/vscode/bin/test"
+  },
+  "devDependencies": {
+    "@types/mocha": "^2.2.42",
+    "@types/node": "^10.12.21",
+    "@types/vscode": "^1.34.0",
+    "tslint": "^5.12.1",
+    "typescript": "^3.9.10",
+    "vscode": "^1.1.34"
+  },
+  "author": "",
+  "license": "ISC"
 }

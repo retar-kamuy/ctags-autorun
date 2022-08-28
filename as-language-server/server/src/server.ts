@@ -30,6 +30,7 @@ connection.onInitialized(() => {
 
 // 設定
 interface LllSettings {
+  clientCurrentPath: string;
   maxLength: number;
 }
 
@@ -88,43 +89,49 @@ async function validateTextDocument(textDocument: ls.TextDocument): Promise<void
   let config = await getDocumentSettings(textDocument.uri);
 
   // lllの実行
-  const cmd = `lll -l ${config.maxLength} "${filePath}"`;
-  connection.console.info(cmd);
-  const output = child_process.execSync(cmd, {
-    encoding: "utf8"
-  });
+  //const cmd = `ctags.exe --tag-relative --extras=f --fields=+K -R -f .tags`;
+  //connection.console.info(cmd);
+  child_process.execSync(`echo %CD%`);
+  connection.console.info(config.clientCurrentPath);
+  process.chdir(config.clientCurrentPath);
+  child_process.execSync(`echo %CD%`);
+  const cmd = `ctags.exe --tag-relative --extras=f --fields=+K -R -f .tags`;
+  child_process.execSync(cmd);
+  //const output = child_process.execSync(cmd, {
+  //  encoding: "utf8"
+  //});
 
   let pattern = /^([^\s]+):(\d+): (.*)$/;
 
   let problems = 0;
   let diagnostics: ls.Diagnostic[] = [];
-  for (let outputLine of output.split("\n")) {
-    problems++;
-    if (problems > 100) {
-      // 100行以上該当する場合はストップ
-      break;
-    }
+  //for (let outputLine of output.split("\n")) {
+  //  problems++;
+  //  if (problems > 100) {
+  //    // 100行以上該当する場合はストップ
+  //    break;
+  //  }
 
-    // 正規表現で出力から行番号とメッセージを抽出
-    const m = pattern.exec(outputLine);
-    if (!m) {
-      continue;
-    }
-    const line = parseInt(m[2]) - 1;
-    const message = m[3];
+  //  // 正規表現で出力から行番号とメッセージを抽出
+  //  const m = pattern.exec(outputLine);
+  //  if (!m) {
+  //    continue;
+  //  }
+  //  const line = parseInt(m[2]) - 1;
+  //  const message = m[3];
 
-    // エラーとして登録
-    let diagnostic: ls.Diagnostic = {
-      severity: ls.DiagnosticSeverity.Warning,
-      range: {
-        start: { line, character: 80 },
-        end: { line, character: Number.MAX_VALUE }
-      },
-      message: message,
-      source: "lll"
-    };
-    diagnostics.push(diagnostic);
-  }
+  //  // エラーとして登録
+  //  let diagnostic: ls.Diagnostic = {
+  //    severity: ls.DiagnosticSeverity.Warning,
+  //    range: {
+  //      start: { line, character: 80 },
+  //      end: { line, character: Number.MAX_VALUE }
+  //    },
+  //    message: message,
+  //    source: "lll"
+  //  };
+  //  diagnostics.push(diagnostic);
+  //}
 
   // ドキュメントの読み取り例
   // const text = textDocument.getText({
