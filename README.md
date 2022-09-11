@@ -1,4 +1,4 @@
-# Ctags Autorun
+# vscode-extension-samples
 
 Setup package.json
 ```
