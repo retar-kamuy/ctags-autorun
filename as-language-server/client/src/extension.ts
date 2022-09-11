@@ -3,6 +3,8 @@ import * as vscode from "vscode";
 import * as ls from "vscode-languageclient";
 import * as child_process from "child_process";
 
+import { readdir } from './execCtags';
+
 let client: ls.LanguageClient;
 
 export function activate(context: vscode.ExtensionContext) {
@@ -75,8 +77,23 @@ async function execCtags(document: vscode.TextDocument): Promise<void> {
     return;
   }
 
-  child_process.execSync(`echo %CD%`);
-  process.chdir(filePath);
-  const cmd = `ctags.exe --tag-relative --extras=f --fields=+K -R -f .ctags --language-force=SystemVerilog`;
-  child_process.execSync(cmd);
+  const workspaceRoot = (vscode.workspace.workspaceFolders && (vscode.workspace.workspaceFolders.length > 0))
+    ? vscode.workspace.workspaceFolders[0].uri.fsPath : undefined;
+
+  if (workspaceRoot !== undefined) {
+    const result = await readdir(workspaceRoot, [], true, ['v', 'vh', 'vhd', 'sv', 'svh']).catch(err => {
+      console.error("Error:", err);
+    });
+    let files;
+    if (result !== undefined) {
+      files = result.join(' ');
+      const cmd = `ctags.exe -f "${workspaceRoot}\\.tags" --tag-relative --extras=f --fields=+K -R ${files}`;
+      child_process.exec(cmd, (error, stdout, stderr) => {
+        if (error) {
+          console.error(stderr);
+        }
+        console.log(stdout);
+      });
+    }
+  }
 }

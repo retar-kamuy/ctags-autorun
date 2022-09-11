@@ -91,12 +91,12 @@ async function validateTextDocument(textDocument: ls.TextDocument): Promise<void
   // lllの実行
   //const cmd = `ctags.exe --tag-relative --extras=f --fields=+K -R -f .tags`;
   //connection.console.info(cmd);
-  child_process.execSync(`echo %CD%`);
-  connection.console.info(config.clientCurrentPath);
-  process.chdir(config.clientCurrentPath);
-  child_process.execSync(`echo %CD%`);
-  const cmd = `ctags.exe --tag-relative --extras=f --fields=+K -R -f .tags`;
-  child_process.execSync(cmd);
+  //child_process.execSync(`echo %CD%`);
+  //connection.console.info(config.clientCurrentPath);
+  //process.chdir(config.clientCurrentPath);
+  //child_process.execSync(`echo %CD%`);
+  //const cmd = `ctags.exe --tag-relative --extras=f --fields=+K -R -f .tags`;
+  //child_process.execSync(cmd);
   //const output = child_process.execSync(cmd, {
   //  encoding: "utf8"
   //});

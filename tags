@@ -1,0 +1,291 @@
+.eslintrc.json	.eslintrc.json	1;"	file	epoch:1661678267
+0	tsconfig.json	/^    ".\/src",$/;"	string	array:include
+1	tsconfig.json	/^    ".\/tests"$/;"	string	array:include
+ACTIVE	hdl/interrupt_controller.sv	/^		ACTIVE$/;"	constant	typedef:interrupt_controller.States
+ADDR_WIDTH	hdl/ram_if.svh	/^	parameter ADDR_WIDTH = 8,$/;"	constant	interface:ram_if
+CAPTURE	hdl/spi_controller.sv	/^		CAPTURE$/;"	constant	typedef:spi_controller.States
+COUNTER_WIDTH	hdl/frequency_devider.sv	/^	localparam COUNTER_WIDTH = $clog2(DIVED_BY-1);$/;"	constant	module:frequency_devider
+COUNTER_WIDTH	hdl/spi_controller.sv	/^	localparam COUNTER_WIDTH = $clog2(SHIFT_NUM);$/;"	constant	module:spi_controller
+CPHA	hdl/register_pkg.svh	/^		logic CPHA;$/;"	member	typedef:regster_pkg.Spcr
+CPOL	hdl/register_pkg.svh	/^		logic CPOL;$/;"	member	typedef:regster_pkg.Spcr
+Ctags Autorun	README.md	/^# Ctags Autorun$/;"	chapter
+DATA_WIDTH	hdl/ram_if.svh	/^	parameter DATA_WIDTH = 8$/;"	constant	interface:ram_if
+DATA_WIDTH	hdl/register_pkg.svh	/^	localparam DATA_WIDTH = 8;$/;"	constant	package:regster_pkg
+DATA_WIDTH	hdl/spi_controller.sv	/^	parameter DATA_WIDTH = 8$/;"	constant	module:spi_controller
+DATA_WIDTH	hdl/spi_receiver.sv	/^	parameter DATA_WIDTH = 8$/;"	constant	module:spi_receiver
+DATA_WIDTH	hdl/spi_sender.sv	/^	parameter DATA_WIDTH = 8$/;"	constant	module:spi_sender
+DORD	hdl/register_pkg.svh	/^		logic DORD;$/;"	member	typedef:regster_pkg.Spcr
+Edge	hdl/clock_generator.sv	/^	} Edge;$/;"	typedef	module:clock_generator
+FIRST_RISE	hdl/locked_detector.sv	/^		FIRST_RISE,$/;"	constant	typedef:locked_detector.States
+IDLE	hdl/interrupt_controller.sv	/^		IDLE,$/;"	constant	typedef:interrupt_controller.States
+IDLE	hdl/register_map.sv	/^		IDLE,$/;"	constant	typedef:register_map.States
+IDLE	hdl/spi_controller.sv	/^		IDLE,$/;"	constant	typedef:spi_controller.States
+IDLE	hdl/state_machine.sv	/^		IDLE,$/;"	constant	typedef:state_machime.States
+INITIAL_DATA	hdl/edge_detector.sv	/^	parameter INITIAL_DATA = 1'b0$/;"	constant	module:edge_detector
+LAUNCH	hdl/spi_controller.sv	/^		LAUNCH,$/;"	constant	typedef:spi_controller.States
+LOCK	hdl/locked_detector.sv	/^		LOCK$/;"	constant	typedef:locked_detector.States
+PORTB_ADDR	hdl/register_pkg.svh	/^	localparam [DATA_WIDTH-1:0] PORTB_ADDR = 8'h40 + SPI_BASE_ADDR;$/;"	constant	package:regster_pkg
+PORTB_INIT	hdl/register_pkg.svh	/^	localparam [DATA_WIDTH-1:0] PORTB_INIT = 8'h1F;$/;"	constant	package:regster_pkg
+Portb	hdl/register_pkg.svh	/^	} Portb;$/;"	typedef	package:regster_pkg
+README.md	README.md	1;"	file	epoch:1661678269
+SECOND_RISE	hdl/locked_detector.sv	/^		SECOND_RISE,$/;"	constant	typedef:locked_detector.States
+SHIFT	hdl/spi_controller.sv	/^		SHIFT,$/;"	constant	typedef:spi_controller.States
+SHIFT_NUM	hdl/spi_controller.sv	/^	localparam SHIFT_NUM = DATA_WIDTH - 1;$/;"	constant	module:spi_controller
+SPCR_ADDR	hdl/register_pkg.svh	/^	localparam [DATA_WIDTH-1:0] SPCR_ADDR = 8'h00 + SPI_BASE_ADDR;$/;"	constant	package:regster_pkg
+SPCR_INIT	hdl/register_pkg.svh	/^	localparam [DATA_WIDTH-1:0] SPCR_INIT = 8'h00;$/;"	constant	package:regster_pkg
+SPD	hdl/register_pkg.svh	/^		logic [7:0] SPD;$/;"	member	typedef:regster_pkg.Spdr
+SPDR_ADDR	hdl/register_pkg.svh	/^	localparam [DATA_WIDTH-1:0] SPDR_ADDR = 8'h20 + SPI_BASE_ADDR;$/;"	constant	package:regster_pkg
+SPDR_INIT	hdl/register_pkg.svh	/^	localparam [DATA_WIDTH-1:0] SPDR_INIT = 8'h20;$/;"	constant	package:regster_pkg
+SPE	hdl/register_pkg.svh	/^		logic SPE;$/;"	member	typedef:regster_pkg.Spcr
+SPI2X	hdl/register_pkg.svh	/^		logic SPI2X;$/;"	member	typedef:regster_pkg.Spsr
+SPIE	hdl/register_pkg.svh	/^		logic SPIE;$/;"	member	typedef:regster_pkg.Spcr
+SPIF	hdl/register_pkg.svh	/^		logic SPIF;$/;"	member	typedef:regster_pkg.Spsr
+SPI_BASE_ADDR	hdl/register_pkg.svh	/^	localparam SPI_BASE_ADDR = 8'h0;$/;"	constant	package:regster_pkg
+SPR	hdl/register_pkg.svh	/^		logic [1:0] SPR;$/;"	member	typedef:regster_pkg.Spcr
+SPSR_ADDR	hdl/register_pkg.svh	/^	localparam [DATA_WIDTH-1:0] SPSR_ADDR = 8'h10 + SPI_BASE_ADDR;$/;"	constant	package:regster_pkg
+SPSR_INIT	hdl/register_pkg.svh	/^	localparam [DATA_WIDTH-1:0] SPSR_INIT = 8'h10;$/;"	constant	package:regster_pkg
+SS0	hdl/register_pkg.svh	/^		logic SS0;$/;"	member	typedef:regster_pkg.Portb
+SS1	hdl/register_pkg.svh	/^		logic SS1;$/;"	member	typedef:regster_pkg.Portb
+SS2	hdl/register_pkg.svh	/^		logic SS2;$/;"	member	typedef:regster_pkg.Portb
+SS3	hdl/register_pkg.svh	/^		logic SS3;$/;"	member	typedef:regster_pkg.Portb
+SS4	hdl/register_pkg.svh	/^		logic SS4;$/;"	member	typedef:regster_pkg.Portb
+STANDBY	hdl/interrupt_controller.sv	/^		STANDBY,$/;"	constant	typedef:interrupt_controller.States
+STANDBY	hdl/state_machine.sv	/^		STANDBY,$/;"	constant	typedef:state_machime.States
+STATE_NUM	hdl/register_pkg.svh	/^	localparam STATE_NUM = 4;$/;"	constant	package:regster_pkg
+Spcr	hdl/register_pkg.svh	/^	} Spcr;$/;"	typedef	package:regster_pkg
+Spdr	hdl/register_pkg.svh	/^	}Spdr;$/;"	typedef	package:regster_pkg
+Spsr	hdl/register_pkg.svh	/^	} Spsr;$/;"	typedef	package:regster_pkg
+States	hdl/interrupt_controller.sv	/^	} States;$/;"	typedef	module:interrupt_controller
+States	hdl/locked_detector.sv	/^	} States;$/;"	typedef	module:locked_detector
+States	hdl/register_map.sv	/^	} States;$/;"	typedef	module:register_map
+States	hdl/spi_controller.sv	/^	} States;$/;"	typedef	module:spi_controller
+States	hdl/state_machine.sv	/^	} States;$/;"	typedef	module:state_machime
+TRANSFER	hdl/state_machine.sv	/^		TRANSFER$/;"	constant	typedef:state_machime.States
+TRANSFOR	hdl/register_map.sv	/^		TRANSFOR,$/;"	constant	typedef:register_map.States
+UNLOCK	hdl/locked_detector.sv	/^		UNLOCK,$/;"	constant	typedef:locked_detector.States
+UPDATA	hdl/register_map.sv	/^		UPDATA$/;"	constant	typedef:register_map.States
+WAIT_IDLE	hdl/register_map.sv	/^		WAIT_IDLE,$/;"	constant	typedef:register_map.States
+WAIT_LOCKED	hdl/state_machine.sv	/^		WAIT_LOCKED,$/;"	constant	typedef:state_machime.States
+WCOL	hdl/register_pkg.svh	/^		logic WCOL;$/;"	member	typedef:regster_pkg.Spsr
+__RAM_IF_SVH__	hdl/ram_if.svh	/^`define __RAM_IF_SVH__$/;"	constant
+__REGISTER_PKG_SVH__	hdl/register_pkg.svh	/^`define __REGISTER_PKG_SVH__$/;"	constant
+__SPI_IF_SVH__	hdl/spi_if.svh	/^`define __SPI_IF_SVH__$/;"	constant
+_filterExtend	src/execCtags.ts	/^const _filterExtend = (files: string[]): string[] => {$/;"	constant
+addr	hdl/ram_if.svh	/^	logic [ADDR_WIDTH-1:0] addr;$/;"	register	interface:ram_if
+by_128	hdl/clock_generator.sv	/^	logic by_2, by_4, by_8, by_16, by_32, by_64, by_128;$/;"	register	module:clock_generator
+by_16	hdl/clock_generator.sv	/^	logic by_2, by_4, by_8, by_16, by_32, by_64, by_128;$/;"	register	module:clock_generator
+by_2	hdl/clock_generator.sv	/^	logic by_2, by_4, by_8, by_16, by_32, by_64, by_128;$/;"	register	module:clock_generator
+by_32	hdl/clock_generator.sv	/^	logic by_2, by_4, by_8, by_16, by_32, by_64, by_128;$/;"	register	module:clock_generator
+by_4	hdl/clock_generator.sv	/^	logic by_2, by_4, by_8, by_16, by_32, by_64, by_128;$/;"	register	module:clock_generator
+by_64	hdl/clock_generator.sv	/^	logic by_2, by_4, by_8, by_16, by_32, by_64, by_128;$/;"	register	module:clock_generator
+by_8	hdl/clock_generator.sv	/^	logic by_2, by_4, by_8, by_16, by_32, by_64, by_128;$/;"	register	module:clock_generator
+clear	hdl/clock_generator.sv	/^	logic clear, rise_edge;$/;"	register	module:clock_generator
+clear	hdl/locked_detector.sv	/^	input clear,$/;"	port	module:locked_detector
+clear_irq	hdl/interrupt_controller.sv	/^	logic set_irq, clear_irq;$/;"	register	module:interrupt_controller
+clk	hdl/clock_generator.sv	/^	input clk,$/;"	port	module:clock_generator
+clk	hdl/edge_detector.sv	/^	input clk,$/;"	port	module:edge_detector
+clk	hdl/frequency_devider.sv	/^	input clk,$/;"	port	module:frequency_devider
+clk	hdl/interrupt_controller.sv	/^	input clk,$/;"	port	module:interrupt_controller
+clk	hdl/locked_detector.sv	/^	input clk,$/;"	port	module:locked_detector
+clk	hdl/ram_if.svh	/^	input clk,$/;"	port	interface:ram_if
+clk	hdl/register_map.sv	/^	input clk,$/;"	port	module:register_map
+clk	hdl/spi_controller.sv	/^	input clk,$/;"	port	module:spi_controller
+clk	hdl/spi_receiver.sv	/^	input clk,$/;"	port	module:spi_receiver
+clk	hdl/spi_sender.sv	/^	input clk,$/;"	port	module:spi_sender
+clk	hdl/state_machine.sv	/^	input clk,$/;"	port	module:state_machime
+clock_generator	hdl/clock_generator.sv	/^module clock_generator ($/;"	module
+clock_generator.sv	hdl/clock_generator.sv	1;"	file	epoch:1650528611
+clock_rate	hdl/clock_generator.sv	/^	function logic select_clock_rate (logic [2:0] clock_rate, logic [7:0] rate);$/;"	port	function:clock_generator.select_clock_rate
+clock_rate	hdl/clock_generator.sv	/^	input [2:0] clock_rate,$/;"	port	module:clock_generator
+clock_rate	hdl/register_map.sv	/^	output logic [2:0] clock_rate,$/;"	port	module:register_map
+compilerOptions	tsconfig.json	/^  "compilerOptions": {$/;"	object
+complete_tx	hdl/spi_controller.sv	/^	output logic complete_tx$/;"	port	module:spi_controller
+complete_tx	hdl/state_machine.sv	/^	input complete_tx,$/;"	port	module:state_machime
+counter	hdl/frequency_devider.sv	/^	logic [COUNTER_WIDTH-1:0] counter;$/;"	register	module:frequency_devider
+counter	hdl/spi_controller.sv	/^	logic [COUNTER_WIDTH-1:0] counter;$/;"	register	module:spi_controller
+cpha	hdl/register_map.sv	/^	output logic cpha,$/;"	port	module:register_map
+cpha	hdl/spi_controller.sv	/^	input cpha,$/;"	port	module:spi_controller
+cpol	hdl/register_map.sv	/^	output logic cpol,$/;"	port	module:register_map
+cpol	hdl/spi_controller.sv	/^	input cpol,$/;"	port	module:spi_controller
+cpol	hdl/spi_sender.sv	/^	input cpol,$/;"	port	module:spi_sender
+current_state	hdl/interrupt_controller.sv	/^	States next_state, current_state;$/;"	register	module:interrupt_controller
+d	src/execCtags.ts	/^        for (const d of dirs) {$/;"	constant
+data	hdl/ram_if.svh	/^	logic [DATA_WIDTH-1:0] data;$/;"	register	interface:ram_if
+devided_pulse	hdl/frequency_devider.sv	/^	output logic devided_pulse$/;"	port	module:frequency_devider
+dirent	src/execCtags.ts	/^    for (const dirent of dirents.filter(_d => excludeDirs.indexOf(_d.name) == -1)) {$/;"	constant
+dirents	src/execCtags.ts	/^    const dirents = await fs.promises.readdir(dir, { withFileTypes: true });$/;"	constant
+dirs	src/execCtags.ts	/^    const dirs = [];$/;"	constant
+dord	hdl/register_map.sv	/^	output logic dord,$/;"	port	module:register_map
+dummy	hdl/register_pkg.svh	/^		logic [2:0] dummy;$/;"	member	typedef:regster_pkg.Portb
+dummy	hdl/register_pkg.svh	/^		logic [4:0] dummy;$/;"	member	typedef:regster_pkg.Spsr
+dummy	hdl/register_pkg.svh	/^		logic dummy;$/;"	member	typedef:regster_pkg.Spcr
+ecmaVersion	.eslintrc.json	/^        "ecmaVersion": "latest"$/;"	string	object:parserOptions
+edge_detector	hdl/edge_detector.sv	/^module edge_detector #($/;"	module
+edge_detector.sv	hdl/edge_detector.sv	1;"	file	epoch:1646830112
+edge_detector_by_128	hdl/clock_generator.sv	/^	edge_detector #(.INITIAL_DATA(1'b0)) edge_detector_by_128 (.clk, .rst_n, .level(by_128), .rise_/;"	instance	module:clock_generator
+edge_detector_by_16	hdl/clock_generator.sv	/^	edge_detector #(.INITIAL_DATA(1'b0)) edge_detector_by_16  (.clk, .rst_n, .level(by_16 ), .rise_/;"	instance	module:clock_generator
+edge_detector_by_2	hdl/clock_generator.sv	/^	edge_detector #(.INITIAL_DATA(1'b0)) edge_detector_by_2   (.clk, .rst_n, .level(by_2  ), .rise_/;"	instance	module:clock_generator
+edge_detector_by_32	hdl/clock_generator.sv	/^	edge_detector #(.INITIAL_DATA(1'b0)) edge_detector_by_32  (.clk, .rst_n, .level(by_32 ), .rise_/;"	instance	module:clock_generator
+edge_detector_by_4	hdl/clock_generator.sv	/^	edge_detector #(.INITIAL_DATA(1'b0)) edge_detector_by_4   (.clk, .rst_n, .level(by_4  ), .rise_/;"	instance	module:clock_generator
+edge_detector_by_64	hdl/clock_generator.sv	/^	edge_detector #(.INITIAL_DATA(1'b0)) edge_detector_by_64  (.clk, .rst_n, .level(by_64 ), .rise_/;"	instance	module:clock_generator
+edge_detector_by_8	hdl/clock_generator.sv	/^	edge_detector #(.INITIAL_DATA(1'b0)) edge_detector_by_8   (.clk, .rst_n, .level(by_8  ), .rise_/;"	instance	module:clock_generator
+enable	hdl/ram_if.svh	/^	logic enable;$/;"	register	interface:ram_if
+env	.eslintrc.json	/^    "env": {$/;"	object
+es2021	.eslintrc.json	/^        "es2021": true,$/;"	boolean	object:env
+esModuleInterop	tsconfig.json	/^    "esModuleInterop": true,$/;"	boolean	object:compilerOptions
+excludeDirs	src/execCtags.ts	/^const excludeDirs = [$/;"	constant
+execCtags.ts	src/execCtags.ts	1;"	file	epoch:1662264932
+extends	.eslintrc.json	/^    "extends": "standard-with-typescript",$/;"	string
+fall_edge	hdl/edge_detector.sv	/^	output logic fall_edge$/;"	port	module:edge_detector
+fell	hdl/clock_generator.sv	/^		logic fell;$/;"	member	typedef:clock_generator.Edge
+fell_pulse	hdl/clock_generator.sv	/^	output logic fell_pulse,$/;"	port	module:clock_generator
+fell_pulse	hdl/spi_controller.sv	/^	input fell_pulse,$/;"	port	module:spi_controller
+frequency_devider	hdl/frequency_devider.sv	/^module frequency_devider #($/;"	module
+frequency_devider.sv	hdl/frequency_devider.sv	1;"	file	epoch:1647070646
+frequency_devider_by_128	hdl/clock_generator.sv	/^	) frequency_devider_by_128 ($/;"	instance	module:clock_generator
+frequency_devider_by_16	hdl/clock_generator.sv	/^	) frequency_devider_by_16 ($/;"	instance	module:clock_generator
+frequency_devider_by_2	hdl/clock_generator.sv	/^	) frequency_devider_by_2 ($/;"	instance	module:clock_generator
+frequency_devider_by_32	hdl/clock_generator.sv	/^	) frequency_devider_by_32 ($/;"	instance	module:clock_generator
+frequency_devider_by_4	hdl/clock_generator.sv	/^	) frequency_devider_by_4 ($/;"	instance	module:clock_generator
+frequency_devider_by_64	hdl/clock_generator.sv	/^	) frequency_devider_by_64 ($/;"	instance	module:clock_generator
+frequency_devider_by_8	hdl/clock_generator.sv	/^	) frequency_devider_by_8 ($/;"	instance	module:clock_generator
+geie	hdl/interrupt_controller.sv	/^	input geie,$/;"	port	module:interrupt_controller
+gen_lsb_buffer	hdl/spi_receiver.sv	/^	generate for(genvar i = 0; i < DATA_WIDTH; i++) begin : gen_lsb_buffer$/;"	block	module:spi_receiver
+gen_lsb_buffer	hdl/spi_sender.sv	/^	generate for(genvar i = 0; i < DATA_WIDTH; i++) begin : gen_lsb_buffer$/;"	block	module:spi_sender
+include	tsconfig.json	/^  "include": [$/;"	array
+includeExtends	src/execCtags.ts	/^const includeExtends = [$/;"	constant
+initiator	hdl/ram_if.svh	/^	modport initiator ($/;"	modport	interface:ram_if
+initiator	hdl/spi_if.svh	/^	modport initiator ($/;"	modport	interface:spi_if
+int_en	hdl/interrupt_controller.sv	/^	logic int_en;$/;"	register	module:interrupt_controller
+interrupt_controller	hdl/interrupt_controller.sv	/^module interrupt_controller ($/;"	module
+interrupt_controller.sv	hdl/interrupt_controller.sv	1;"	file	epoch:1647162033
+irq_ack	hdl/interrupt_controller.sv	/^	output logic irq_ack$/;"	port	module:interrupt_controller
+irq_ack	hdl/register_map.sv	/^	input irq_ack,$/;"	port	module:register_map
+irq_clr	hdl/interrupt_controller.sv	/^	input irq_clr,$/;"	port	module:interrupt_controller
+launch_tx	hdl/spi_controller.sv	/^	output launch_tx,$/;"	port	module:spi_controller
+launch_tx	hdl/spi_sender.sv	/^	input launch_tx,$/;"	port	module:spi_sender
+launch_tx	hdl/state_machine.sv	/^	output launch_tx$/;"	port	module:state_machime
+level	hdl/edge_detector.sv	/^	input level,$/;"	port	module:edge_detector
+level_reg	hdl/edge_detector.sv	/^	logic level_reg;$/;"	register	module:edge_detector
+limit	hdl/frequency_devider.sv	/^	logic limit;$/;"	register	module:frequency_devider
+locked	hdl/clock_generator.sv	/^	output locked$/;"	port	module:clock_generator
+locked	hdl/locked_detector.sv	/^	output logic locked$/;"	port	module:locked_detector
+locked	hdl/state_machine.sv	/^	input locked,$/;"	port	module:state_machime
+locked_detector	hdl/clock_generator.sv	/^	locked_detector locked_detector ($/;"	instance	module:clock_generator
+locked_detector	hdl/locked_detector.sv	/^module locked_detector ($/;"	module
+locked_detector.sv	hdl/locked_detector.sv	1;"	file	epoch:1647162031
+lsb_buffer	hdl/spi_receiver.sv	/^	logic [DATA_WIDTH-1:0] lsb_buffer;$/;"	register	module:spi_receiver
+lsb_buffer	hdl/spi_sender.sv	/^	logic [DATA_WIDTH-1:0] lsb_buffer;$/;"	register	module:spi_sender
+lsb_first	hdl/spi_receiver.sv	/^	input lsb_first,$/;"	port	module:spi_receiver
+lsb_first	hdl/spi_sender.sv	/^	input lsb_first,$/;"	port	module:spi_sender
+miso	hdl/spi_if.svh	/^	logic miso;$/;"	register	interface:spi_if
+module	tsconfig.json	/^    "module": "commonjs",$/;"	string	object:compilerOptions
+mosi	hdl/spi_if.svh	/^	logic mosi;$/;"	register	interface:spi_if
+mosi	hdl/spi_sender.sv	/^	output logic mosi$/;"	port	module:spi_sender
+msb_buffer	hdl/spi_receiver.sv	/^	logic [DATA_WIDTH-1:0] msb_buffer;$/;"	register	module:spi_receiver
+msb_buffer	hdl/spi_sender.sv	/^	logic [DATA_WIDTH-1:0] msb_buffer;$/;"	register	module:spi_sender
+next_state	hdl/interrupt_controller.sv	/^	States next_state, current_state;$/;"	register	module:interrupt_controller
+node	.eslintrc.json	/^        "node": true$/;"	boolean	object:env
+outDir	tsconfig.json	/^    "outDir": ".\/dist",$/;"	string	object:compilerOptions
+overrides	.eslintrc.json	/^    "overrides": [$/;"	array
+parserOptions	.eslintrc.json	/^    "parserOptions": {$/;"	object
+pb	hdl/register_map.sv	/^	output [4:0] pb,$/;"	port	module:register_map
+peie	hdl/interrupt_controller.sv	/^	input peie,$/;"	port	module:interrupt_controller
+peif	hdl/interrupt_controller.sv	/^	input peif,$/;"	port	module:interrupt_controller
+peif_reg	hdl/interrupt_controller.sv	/^	logic peif_reg;$/;"	register	module:interrupt_controller
+port_write	hdl/register_map.sv	/^	logic port_write;$/;"	register	module:register_map
+portb	hdl/register_map.sv	/^	PORTB portb;$/;"	register	module:register_map
+pre_receive_pulse	hdl/spi_controller.sv	/^	logic pre_send_pulse, pre_receive_pulse;$/;"	register	module:spi_controller
+pre_send_pulse	hdl/spi_controller.sv	/^	logic pre_send_pulse, pre_receive_pulse;$/;"	register	module:spi_controller
+ram_data	hdl/ram_if.svh	/^	logic [DATA_WIDH-1:0] ram_data;$/;"	register	interface:ram_if
+ram_if	hdl/ram_if.svh	/^interface ram_if #($/;"	interface
+ram_if	hdl/register_map.sv	/^	ram_if.slave ram_if$/;"	port	module:register_map
+ram_if.svh	hdl/ram_if.svh	1;"	file	epoch:1650275150
+rate	hdl/clock_generator.sv	/^	function logic select_clock_rate (logic [2:0] clock_rate, logic [7:0] rate);$/;"	port	function:clock_generator.select_clock_rate
+read_aceess	hdl/register_map.sv	/^	logic write_access, read_aceess;$/;"	register	module:register_map
+readdir	src/execCtags.ts	/^const readdir = async (dir: string, files: string[], recursive?: boolean) : Promise<string[]> =>/;"	constant
+receive_data	hdl/spi_receiver.sv	/^	output logic [DATA_WIDTH-1:0] receive_data$/;"	port	module:spi_receiver
+receive_enable	hdl/spi_controller.sv	/^	logic send_enable, receive_enable;$/;"	register	module:spi_controller
+receive_pulse	hdl/spi_controller.sv	/^	output receive_pulse,$/;"	port	module:spi_controller
+register_map	hdl/register_map.sv	/^module register_map ($/;"	module
+register_map.sv	hdl/register_map.sv	1;"	file	epoch:1647164545
+register_pkg.svh	hdl/register_pkg.svh	1;"	file	epoch:1650275236
+regster_pkg	hdl/register_pkg.svh	/^package regster_pkg;$/;"	package
+result	src/execCtags.ts	/^    const result = await readdir(".", []).catch(err => {$/;"	constant
+rise_edge	hdl/clock_generator.sv	/^	logic clear, rise_edge;$/;"	register	module:clock_generator
+rise_edge	hdl/edge_detector.sv	/^	output logic rise_edge,$/;"	port	module:edge_detector
+rise_edge	hdl/locked_detector.sv	/^	input rise_edge,$/;"	port	module:locked_detector
+rose	hdl/clock_generator.sv	/^		logic rose;$/;"	member	typedef:clock_generator.Edge
+rose_pulse	hdl/clock_generator.sv	/^	output logic rose_pulse,$/;"	port	module:clock_generator
+rose_pulse	hdl/spi_controller.sv	/^	input rose_pulse,$/;"	port	module:spi_controller
+rst_	hdl/register_map.sv	/^	input rst_,$/;"	port	module:register_map
+rst_n	hdl/clock_generator.sv	/^	input rst_n,$/;"	port	module:clock_generator
+rst_n	hdl/edge_detector.sv	/^	input rst_n,$/;"	port	module:edge_detector
+rst_n	hdl/frequency_devider.sv	/^	input rst_n,$/;"	port	module:frequency_devider
+rst_n	hdl/interrupt_controller.sv	/^	input rst_n,$/;"	port	module:interrupt_controller
+rst_n	hdl/locked_detector.sv	/^	input rst_n,$/;"	port	module:locked_detector
+rst_n	hdl/ram_if.svh	/^	input rst_n$/;"	port	interface:ram_if
+rst_n	hdl/spi_controller.sv	/^	inout rst_n,$/;"	port	module:spi_controller
+rst_n	hdl/spi_receiver.sv	/^	input rst_n,$/;"	port	module:spi_receiver
+rst_n	hdl/spi_sender.sv	/^	input rst_n,$/;"	port	module:spi_sender
+rst_n	hdl/state_machine.sv	/^	input rst_n,$/;"	port	module:state_machime
+rules	.eslintrc.json	/^    "rules": {$/;"	object
+rxb	hdl/register_map.sv	/^	input [register_pkg::BIT_WIDTH-1:0] rxb,$/;"	port	module:register_map
+sampling_pulse	hdl/spi_receiver.sv	/^	input sampling_pulse,$/;"	port	module:spi_receiver
+sck	hdl/spi_if.svh	/^	logic sck;$/;"	register	interface:spi_if
+sck	hdl/spi_sender.sv	/^	output logic sck,$/;"	port	module:spi_sender
+sck_en	hdl/spi_controller.sv	/^	output logic sck_en,$/;"	port	module:spi_controller
+sck_en	hdl/spi_sender.sv	/^	input sck_en,$/;"	port	module:spi_sender
+select_clock_rate	hdl/clock_generator.sv	/^	function logic select_clock_rate (logic [2:0] clock_rate, logic [7:0] rate);$/;"	function	module:clock_generator
+send_enable	hdl/spi_controller.sv	/^	logic send_enable, receive_enable;$/;"	register	module:spi_controller
+send_pulse	hdl/spi_controller.sv	/^	output send_pulse,$/;"	port	module:spi_controller
+send_puse	hdl/spi_sender.sv	/^	input send_puse,$/;"	port	module:spi_sender
+set_irq	hdl/interrupt_controller.sv	/^	logic set_irq, clear_irq;$/;"	register	module:interrupt_controller
+set_spdr	hdl/register_map.sv	/^	output logic set_spdr,$/;"	port	module:register_map
+set_spdr	hdl/state_machine.sv	/^	input set_spdr,$/;"	port	module:state_machime
+shift_end	hdl/spi_controller.sv	/^	logic shift_end;$/;"	register	module:spi_controller
+sourceMap	tsconfig.json	/^    "sourceMap": true,$/;"	boolean	object:compilerOptions
+spcr	hdl/register_map.sv	/^	SPCR spcr;$/;"	register	module:register_map
+spcr_write	hdl/register_map.sv	/^	logic spcr_write;$/;"	register	module:register_map
+spdr	hdl/register_map.sv	/^	SPDR spdr;$/;"	register	module:register_map
+spdr_read	hdl/register_map.sv	/^	logic spdr_write, spdr_read;$/;"	register	module:register_map
+spdr_write	hdl/register_map.sv	/^	logic spdr_write, spdr_read;$/;"	register	module:register_map
+spe	hdl/register_map.sv	/^	output spe,$/;"	port	module:register_map
+spe	hdl/state_machine.sv	/^	input spe,$/;"	port	module:state_machime
+spi_controller	hdl/spi_controller.sv	/^module spi_controller #($/;"	module
+spi_controller.sv	hdl/spi_controller.sv	1;"	file	epoch:1646996654
+spi_if	hdl/spi_if.svh	/^interface spi_if;$/;"	interface
+spi_if.svh	hdl/spi_if.svh	1;"	file	epoch:1650275145
+spi_receiver	hdl/spi_receiver.sv	/^module spi_receiver #($/;"	module
+spi_receiver.sv	hdl/spi_receiver.sv	1;"	file	epoch:1646995616
+spi_sender	hdl/spi_sender.sv	/^module spi_sender #($/;"	module
+spi_sender.sv	hdl/spi_sender.sv	1;"	file	epoch:1646998158
+spie	hdl/register_map.sv	/^	output spie,$/;"	port	module:register_map
+spif	hdl/register_map.sv	/^	output spif,$/;"	port	module:register_map
+spsr	hdl/register_map.sv	/^	SPSR spsr;$/;"	register	module:register_map
+spsr_read	hdl/register_map.sv	/^	logic spsr_write, spsr_read;$/;"	register	module:register_map
+spsr_write	hdl/register_map.sv	/^	logic spsr_write, spsr_read;$/;"	register	module:register_map
+ss	hdl/spi_if.svh	/^	logic ss;$/;"	register	interface:spi_if
+start_pulse	hdl/spi_controller.sv	/^	input start_pulse,$/;"	port	module:spi_controller
+state	hdl/locked_detector.sv	/^	States state;$/;"	register	module:locked_detector
+state	hdl/register_map.sv	/^	States state;$/;"	register	module:register_map
+state	hdl/spi_controller.sv	/^	States state;$/;"	register	module:spi_controller
+state	hdl/state_machine.sv	/^	States state;$/;"	register	module:state_machime
+state_machime	hdl/state_machine.sv	/^module state_machime ($/;"	module
+state_machine.sv	hdl/state_machine.sv	1;"	file	epoch:1646997317
+strict	tsconfig.json	/^    "strict": true$/;"	boolean	object:compilerOptions
+sync_start_pulse	hdl/spi_controller.sv	/^	logic [1:0] sync_start_pulse;$/;"	register	module:spi_controller
+target	hdl/ram_if.svh	/^	modport target ($/;"	modport	interface:ram_if
+target	hdl/spi_if.svh	/^	modport target ($/;"	modport	interface:spi_if
+target	tsconfig.json	/^    "target": "es6",$/;"	string	object:compilerOptions
+transfor	hdl/register_map.sv	/^	input transfor,$/;"	port	module:register_map
+tsconfig.json	tsconfig.json	1;"	file	epoch:1661676859
+tx_clk	hdl/clock_generator.sv	/^	output logic tx_clk,$/;"	port	module:clock_generator
+tx_clk	hdl/spi_sender.sv	/^	input tx_clk,$/;"	port	module:spi_sender
+txb	hdl/register_map.sv	/^	output [register_pkg::BIT_WIDTH-1:0] txb,$/;"	port	module:register_map
+txb	hdl/spi_sender.sv	/^	input [DATA_WIDTH-1:0] txb,$/;"	port	module:spi_sender
+txc	hdl/register_map.sv	/^	input txc,$/;"	port	module:register_map
+update_register	hdl/register_map.sv	/^	logic update_register;$/;"	register	module:register_map
+wren	hdl/ram_if.svh	/^	logic wren;$/;"	register	interface:ram_if
+write_access	hdl/register_map.sv	/^	logic write_access, read_aceess;$/;"	register	module:register_map
+write_event	hdl/register_map.sv	/^	logic write_event;$/;"	register	module:register_map
